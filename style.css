@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500 800;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'HankenGrotesk', sans-serif;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .container-center, .container-result, .container-summary, .text-of-100-circle, .text-result-of-circle  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-result, .container-summary {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    margin-top: 60px;
+  }
+
+  .container-result {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    z-index: 1;
+  }
+
+  .container-summary {
+    background: hsl(0, 0%, 100%);
+    box-shadow: 10px 10px 30px rgba(65, 73, 135, 0.1);
+    width: 350px;
+    position: relative;
+    left: -50px;
+    z-index: 0;
+  }
+
+  .result-text, .higher-than-text {
+    color: hsl(241, 100%, 89%);
+
+  }
+
+  .result-text, .summary-text {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .circle, .great-text {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .text-of-100-circle {
+    color: hsl(241, 100%, 89%);
+    font-size: 15px;
+  }
+
+  .text-result-of-circle {
+    margin-top: 30px;
+    font-size: 60px;
+    font-weight: 800;
+  }
+
+  .circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .great-text, .higher-than-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .great-text {
+    width: 150px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  
+  .higher-than-text {
+    width: 200px;
+    height: 60px;
+    max-width: 200px;
+    font-size: 14px;
+    margin-bottom: 60px;
+    text-align: center;
+    align-items: flex-end;
+  }
+
+  .continue-container {
+    margin-bottom: 60px;
+  }
+
+  .summary-text {
+    width: 160px;
+    color: hsl(224, 30%, 27%)
+  }
+
+  .continue-container, .skill-container {
+    width: 200px;
+    height: 40px;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+  }
+
+  .continue-container {
+    background: hsl(224, 30%, 27%);
+    margin-top: 10px;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .skill-container {
+    width: 170px;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  .category-text {
+    width: 80px;
+    margin-right: 15px;
+    text-align: left;
+  }
+
+  .text-result-reaction, .text-result-memory, .text-result-verbal, .text-result-visual {
+    color: hsl(224, 30%, 27%)
+  }
+
+  .of100 {
+    color: hsl(220, 5%, 62%);
+  }
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    .container-center, .container-result, .container-summary {
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 0;
+    }
+
+    .container-result {
+        height: 250px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .container-result, .container-summary {
+        width: 100%;
+        left: 0px;
+        box-shadow: none;
+    }
+
+    .container-summary {
+        position: relative;
+        top: -10px;
+        z-index: 0;
+    }
+
+    .result-text {
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .text-result-of-circle {
+        margin-top: 0;
+    }
+
+    .higher-than-text {
+        height: 30px;
+        margin-bottom: 30px;
+        font-size: 11px;
+        align-items: center;
+      }
+
+    .great-text {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .text-result-of-circle {
+        font-size: 40px;
+        margin-top: 10px;
+      }
+
+    .text-of-100-circle {
+        margin-bottom: 20px;
+        position: relative;
+        top: -5px;
+    }
+
+    .continue-container, .skill-container {
+        margin-left: 0px;
+    }
+
+    .summary-text {
+        width: 190px;
+      }
+}
+
